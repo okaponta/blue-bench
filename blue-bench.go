@@ -64,6 +64,10 @@ const (
 )
 
 func main() {
+	fmt.Println(Shindan())
+}
+
+func Shindan() string {
 	candidates := [54]string{STR1, STR2, STR3, STR4, STR5, STR6, STR7, STR8, STR9, STR10, STR11, STR12, STR13, STR14, STR15, STR16, STR17, STR18, STR19, STR20, STR21, STR22, STR23, STR24, STR25, STR26, STR27, STR28, STR29, STR30, STR31, STR32, STR33, STR34, STR35, STR36, STR37, STR38, STR39, STR40, STR41, STR42, STR43, STR44, STR45, STR46, STR47, STR48, STR49, STR50, STR51, STR52, STR53, STR54}
 	rand.Seed(time.Now().UnixNano())
 	aoi := candidates[rand.Intn(54)]
@@ -71,5 +75,5 @@ func main() {
 	bench := candidates[rand.Intn(54)]
 	rand.Seed(time.Now().UnixNano())
 	sasuke := candidates[rand.Intn(54)]
-	fmt.Printf("%s%s／%s\n", aoi, bench, sasuke)
+	return aoi + bench + "／" + sasuke
 }
