@@ -4,5 +4,10 @@
 ## Install
 `go install github.com/okaponta/blue-bench@latest`
 
+or 
+
+Download binary from:
+https://github.com/okaponta/blue-bench/releases
+
 ## Run
 `blue-bench`
