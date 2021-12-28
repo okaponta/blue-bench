@@ -1,3 +1,3 @@
-module github.com/okaponta/blue-bench-shindan
+module github.com/okaponta/blue-bench
 
 go 1.17

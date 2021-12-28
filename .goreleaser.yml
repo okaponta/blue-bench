@@ -1,4 +1,4 @@
-project_name: blue-bench-shindan
+project_name: blue-bench
 env:
   - GO111MODULE=on
 before:
@@ -6,7 +6,7 @@ before:
     - go mod tidy
 builds:
   - main: .
-    binary: blue-bench-shindan
+    binary: blue-bench
     ldflags:
       - -s -w
       - -X main.Version={{.Version}}
